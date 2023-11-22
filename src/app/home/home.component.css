@@ -1,0 +1,97 @@
+:host {
+    display: block;
+    margin: 0 auto; /* Adjust the margin as needed */
+    max-width: 1500px; /* Or any other max-width */
+  }
+
+:host {
+    transform: scale(0.8);
+    transform-origin: center top;
+    width: 100%; /* Adjust if necessary */
+    margin-left: auto;
+    margin-right: auto;
+    display: block; /* Or flex, depending on your layout needs */
+  }
+  
+
+.wide-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .info-section {
+    font-size: 18px; /* Increase the font size for headings */
+    display: flex;
+    justify-content: space-around; /* This distributes the blocks evenly */
+    padding: 20px;
+  }
+  
+  .info-block {
+    font-size: 18px; /* Increase the font size for headings */
+    flex: 1; /* Each block will take equal space */
+    padding: 15px;
+    text-align: center; /* Center the text inside each block */
+  }
+  
+  /* Additional styling for headings and paragraphs */
+  .info-block h3 {
+    color: #4a4a4a;
+    margin-bottom: 10px;
+  }
+  
+  .info-block p {
+    color: #6a6a6a;
+  }
+
+  @media (max-width: 768px) {
+    .info-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .info-block {
+      margin-bottom: 20px;
+      width: 80%; /* Adjust the width on smaller screens */
+    }
+  }
+
+  .homepage-image-row {
+    display: flex;
+    justify-content: space-between; /* Adjusts children to each end */
+    padding: 20px 0; /* Space above and below the image row */
+  }
+  
+  .homepage-image-container {
+    flex: 1; /* Allows the containers to grow */
+    padding: 0 10px; /* Space between the image containers */
+  }
+  
+  .left-image {
+    text-align: left; /* Aligns the image to the left */
+  }
+  
+  .right-image {
+    text-align: right; /* Aligns the image to the right */
+  }
+  
+  .homepage-image-container img {
+    width: auto; /* Adjust width as needed */
+    max-width: 100%; /* Ensures image doesn't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  @media (max-width: 768px) {
+    .homepage-image-row {
+      flex-direction: column;
+    }
+  
+    .left-image, .right-image {
+      text-align: center; /* Center images on smaller screens */
+      padding: 0; /* Adjust padding as needed */
+    }
+  
+    .homepage-image-container {
+      width: 100%; /* Full width for each container on smaller screens */
+    }
+  }
+    
